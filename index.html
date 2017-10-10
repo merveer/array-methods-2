@@ -54,11 +54,14 @@
     //convert to arrow func
     const newCommentFunc = comments.find(comment => comment.id === 823423);
     console.log(newCommentFunc);
-
-
     // Array.prototype.findIndex()
     // Find the comment with this ID
-    // delete the comment with the ID of 823423
+    // delete the comment with the ID of 542328
+
+    const index = comments.findIndex(comment => comment.id === 542328);
+    console.log(index);
+    comments.splice(index,4);
+    console.table(comments);
 
   </script>
 </body>
